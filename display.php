@@ -33,6 +33,8 @@ $password = filter_input(INPUT_POST, 'password');
 <h2>Questions Added by the User:</h2>
 <h2><?php echo "Welcome" .''. $fname . '' . $lname . "!";?></h2>
 
+<?php get_question($userId); ?>
+
 <table class="table" align="center">
     <tr>
         <th>Title</th>

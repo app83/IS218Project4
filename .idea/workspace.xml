@@ -21,8 +21,12 @@
   <component name="ChangeListManager">
     <list default="true" id="2e7b381d-0028-4a30-b853-de1a4460d1cc" name="Default Changelist" comment="Files added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display.php" beforeDir="false" afterPath="$PROJECT_DIR$/display.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/question.html" beforeDir="false" afterPath="$PROJECT_DIR$/question.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/question.php" beforeDir="false" afterPath="$PROJECT_DIR$/question.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +89,7 @@
       <workItem from="1603834959486" duration="7278000" />
       <workItem from="1603842378389" duration="1480000" />
       <workItem from="1606702359551" duration="1025000" />
-      <workItem from="1606757504455" duration="6275000" />
+      <workItem from="1606757504455" duration="7357000" />
     </task>
     <task id="LOCAL-00001" summary="Files added">
       <created>1602022154344</created>
@@ -147,14 +151,14 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="530" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1606703082883" />
-    <state x="520" y="238" key="Github.ShareDialog" timestamp="1602001412580">
+    <state x="520" y="238" key="Github.ShareDialog" timestamp="1606764082827">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="520" y="238" key="Github.ShareDialog/0.0.1280.680@0.0.1280.680" timestamp="1602001412580" />
-    <state x="461" y="45" key="Github.UntrackedFilesDialog" timestamp="1602001433393">
+    <state x="520" y="238" key="Github.ShareDialog/0.0.1280.680@0.0.1280.680" timestamp="1606764082827" />
+    <state x="461" y="45" key="Github.UntrackedFilesDialog" timestamp="1606764098487">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="461" y="45" key="Github.UntrackedFilesDialog/0.0.1280.680@0.0.1280.680" timestamp="1602001433393" />
+    <state x="461" y="45" key="Github.UntrackedFilesDialog/0.0.1280.680@0.0.1280.680" timestamp="1606764098487" />
     <state x="585" y="264" key="NewPhpFileDialog" timestamp="1606757518758">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

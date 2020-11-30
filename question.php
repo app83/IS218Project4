@@ -26,8 +26,8 @@ $ownerid = filter_input(input_get, 'id');
 
 $query = 'SELECT ownerid FROM questions WHERE owneremail = :email';
 
-check_question($title, $body, $skills, $db);
-add_question($owneremail, $ownerid, $title, $body, $skills);
+check_question($title, $body, $skills);
+add_question($userId, $title, $body, $skills);
 
 
 ?>

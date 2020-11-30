@@ -75,8 +75,9 @@ function add_user($fname, $lname, $birthday, $email, $password, $db)
 
 }
 
-function check_question($title, $body, $skills, $db)
+function check_question($title, $body, $skills)
 {
+    global $db;
     //Question Name
     if (strlen($title) < 3) {
         echo "Question Name must be at least 3 characters <br><br>";
@@ -112,7 +113,7 @@ function check_question($title, $body, $skills, $db)
         echo "</strong> <br><br>";
     }
 }
-function add_question($userId, $title, $body, $skills, $db)
+function add_question($userId, $title, $body, $skills)
 {
     global $db;
     $query = 'SELECT email FROM accounts WHERE id = :userId';
