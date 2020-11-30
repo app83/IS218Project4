@@ -2,8 +2,8 @@
 require('database.php');
 require('functions.php');
 
-$fname = filter_input(INPUT_GET, 'fname');
-$lname = filter_input(INPUT_GET, 'lname');
+$fname = filter_input(INPUT_POST, 'fname');
+$lname = filter_input(INPUT_POST, 'lname');
 $birthday = filter_input(INPUT_POST, 'birthday');
 $email = filter_input(INPUT_POST, 'email');
 $password = filter_input(INPUT_POST, 'password');
@@ -24,6 +24,7 @@ $password = filter_input(INPUT_POST, 'password');
         }
         table {
             width: 75%;
+            text-align: center;
         }
     </style>
 
@@ -35,7 +36,7 @@ $password = filter_input(INPUT_POST, 'password');
 
 <?php get_question($userId); ?>
 
-<table class="table" align="center">
+<table class="table">
     <tr>
         <th>Title</th>
         <th>Body</th>

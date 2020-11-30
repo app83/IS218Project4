@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -21,8 +24,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2e7b381d-0028-4a30-b853-de1a4460d1cc" name="Default Changelist" comment="Files added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display.php" beforeDir="false" afterPath="$PROJECT_DIR$/display.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +87,7 @@
       <workItem from="1603834959486" duration="7278000" />
       <workItem from="1603842378389" duration="1480000" />
       <workItem from="1606702359551" duration="1025000" />
-      <workItem from="1606757504455" duration="8009000" />
+      <workItem from="1606757504455" duration="8393000" />
     </task>
     <task id="LOCAL-00001" summary="Files added">
       <created>1602022154344</created>
@@ -115,7 +117,21 @@
       <option name="project" value="LOCAL" />
       <updated>1606764997311</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Files added">
+      <created>1606765703671</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606765703671</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Files added">
+      <created>1606765845701</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606765845701</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,10 +198,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="474" y="154" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1606762089914" />
-    <state x="397" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1606760293383">
+    <state x="397" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1606765831805">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="397" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1606760293383" />
+    <state x="397" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1606765831805" />
     <state x="438" y="78" key="webDeployment.PermissionsDialog.Tabs" timestamp="1602001162422">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
