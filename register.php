@@ -21,8 +21,8 @@ $birthday = filter_input(INPUT_POST, 'birthday');
 $email = filter_input(INPUT_POST, 'email');
 $password = filter_input(INPUT_POST, 'password');
 
-check_userinput($fname, $lname, $birthday, $email, $password, $db);
-add_user($fname, $lname, $birthday, $email, $password, $db);
+check_userinput($fname, $lname, $birthday, $email, $password);
+add_user($fname, $lname, $birthday, $email, $password);
 
 ?>
 </form>

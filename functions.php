@@ -1,8 +1,8 @@
 <?php
 require('database.php');
 
-function check_userinput($fname, $lname, $birthday, $email, $password, $db)
-{
+function check_userinput($fname, $lname, $birthday, $email, $password)
+{   global $db;
     //First Name
     if (empty($fname)) {
         echo "First Name is required <br><br>";
@@ -52,26 +52,28 @@ function check_login($email, $password, $db){
 
 }
 
-function add_user($fname, $lname, $birthday, $email, $password, $db)
+function add_user($fname, $lname, $birthday, $email, $password)
 {
-    try {
-        $query = 'INSERT INTO accounts (fname, lname, birthday, email, password) 
-                      VALUES ( :fname, :lname, :birthday, :email, :password)';
+    global $db;
 
-        $statement = $db->prepare($query);
-        $statement->bindValue(':fname', $fname);
-        $statement->bindValue(':lname', $lname);
-        $statement->bindValue(':birthday', $birthday);
-        $statement->bindValue(':email', $email);
-        $statement->bindValue(':password', $password);
+          try {
+            $query = 'INSERT INTO accounts (fname, lname, birthday, email, password) 
+                  VALUES ( :fname, :lname, :birthday, :email, :password)';
 
-        $statement->execute();
-        $statement->closeCursor();
-        header('Location: display.php');
-    } catch (Exception $error) {
-        $error_message = $error->getMessage();
-        echo "Error INSERTING into SQL: $error_message";
-    }
+            $statement = $db->prepare($query);
+            $statement->bindValue(':fname', $fname);
+            $statement->bindValue(':lname', $lname);
+            $statement->bindValue(':birthday', $birthday);
+            $statement->bindValue(':email', $email);
+            $statement->bindValue(':password', $password);
+
+            $statement->execute();
+            $statement->closeCursor();
+            header('Location: display.php');
+        } catch (Exception $error) {
+            $error_message = $error->getMessage();
+            echo "Error INSERTING into SQL: $error_message";
+        }
 
 }
 
