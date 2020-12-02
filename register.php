@@ -21,6 +21,13 @@ $birthday = filter_input(INPUT_POST, 'birthday');
 $email = filter_input(INPUT_POST, 'email');
 $password = filter_input(INPUT_POST, 'password');
 
+/*if ($fname == NULL || $lname == NULL || $birthday == NULL || $email == NULL || $password == NULL || strlen($password) < 8) {
+    echo "All fields are required and password must be at least 8 characters.";
+} else {
+    echo "Successful registration";
+    header('Location: display.php?userId=$userId');
+}
+*/
 check_userinput($fname, $lname, $birthday, $email, $password);
 add_user($fname, $lname, $birthday, $email, $password);
 
