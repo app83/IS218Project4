@@ -15,48 +15,45 @@
 require ('database.php');
 require ('functions.php');
 
-$title = filter_input(INPUT_POST, 'title');
-$body = filter_input(INPUT_POST, 'body');
-$skills = filter_input(INPUT_POST, 'skills');
-$skills = explode(',', $skills);
-$skills = ($skills !== NULL) ? $skills : array();
-
-$owneremail = filter_input(input_get, 'email') ;
+/*$owneremail = filter_input(input_get, 'email') ;
 $ownerid = filter_input(input_get, 'id');
 
 $query = 'SELECT ownerid FROM questions WHERE owneremail = :email';
+*/
 
-/*
- if ($title == NULL || $body == NULL || $skills == NULL || strlen($title) < 3 || strlen($body) > 500 || count($skills) < 2 ){
-    echo "All fields are required.";
-    header ('Location: question.html');
-} else {
-    try {
-        $query = 'INSERT INTO questions (owneremail, ownerid, title, body, skills, createddate)
-                      VALUES ( :email, :ownerid, :title, :body, :skills, NOW())';
-
-        $statement = $db->prepare($query);
-
-        $statement->bindValue(':email', $email);
-        $statement->bindValue(':ownerid', $userId);
-        $statement->bindValue(':title', $title);
-        $statement->bindValue(':body', $body);
-        $statement->bindValue(':skills', $skills);
-
-        $statement->execute();
-
-        $statement->closeCursor();
-        header('Location: display.php');
-    } catch (Exception $error) {
-        $error_message = $error->getMessage();
-        echo "Error INSERTING into SQL: $error_message";
+$action = filter_input(INPUT_POST, 'action');
+if ($action == NULL) {
+    $action = filter_input(INPUT_GET, 'action');
+    if ($action == NULL) {
+        $action = 'show_login';
     }
-
 }
 
- */
-check_question($title, $body, $skills);
-add_question($userId, $title, $body, $skills);
+switch ($action) {
+case 'show_login': {
+    include('index.html');
+    break;
+}
+case 'question_form':
+{
+    $title = filter_input(INPUT_POST, 'title');
+    $body = filter_input(INPUT_POST, 'body');
+    $skills = filter_input(INPUT_POST, 'skills');
+    $skills = explode(',', $skills);
+    $skills = ($skills !== NULL) ? $skills : array();
+    $userId = filter_input(INPUT_GET, 'userId');
+
+     if ($title == NULL || $body == NULL || $skills == NULL || strlen($title) < 3 || strlen($body) > 500 || count($skills) < 2 ){
+         $error = 'All fields are not included';
+         include('error.php');
+    } else {
+       add_question($userId, $title, $body, $skills);
+       header("Location: display.php?userId=$userId");
+
+    }
+}
+//check_question($title, $body, $skills);
+//add_question($userId, $title, $body, $skills);
 
 
 ?>

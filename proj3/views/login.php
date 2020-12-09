@@ -1,6 +1,6 @@
 <?php include('abstract-views/header.php'); ?>
 
-<form action="index.php" method="post">
+<form action="../index.php" method="post">
     <input type="hidden" name="action" value="validate_login">
 
     <div class="form-group">
@@ -16,4 +16,4 @@
     <button type="submit" class="btn btn-primary">Submit</button>
 </form>
 
-<?php include('abstract-views/footer.php.php'); ?>
+<?php include('abstract-views/footer.php'); ?>

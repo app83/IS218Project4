@@ -16,38 +16,44 @@
 require ('database.php');
 require ('functions.php');
 
-$email = filter_input(INPUT_POST, 'email');
-$password = filter_input(INPUT_POST, 'password');
-
-/*
- if ($email == NULL || $password == NULL || strlen($password) < 8 ) {
-    echo "All fields are required and password must be 8 characters long";
-    header ('Location: index.html');
-} else {
-    $query = 'SELECT * FROM accounts WHERE email = :email AND password = :password';
-
-    $statement = $db->prepare($query);
-    $statement->bindValue(':email', $email);
-    $statement->bindValue(':password', $password);
-    $statement->execute();
-
-    $user = $statement->fetch();
-
-    $isValidLogin = count($user) > 0;
-    if(!$isValidLogin){
-        $statement->closeCursor();
-        header('Location: index.html');
-        return false;
-    } else {
-        $userId = $user['id'];
-        $statement->closeCursor();
-        header('Location: display.php');
-        return $userId;
+$action = filter_input(INPUT_POST, 'action');
+if ($action == NULL) {
+    $action = filter_input(INPUT_GET, 'action');
+    if ($action == NULL) {
+        $action = 'show_login';
     }
- */
-check_login($email, $password, $db);
+}
+switch ($action) {
+    case 'show_login':
+    {
+        include('index.html');
+        break;
+    }
 
-validate_login($email, $password);
+    case 'validate_login':
+    {
+        $email = filter_input(INPUT_POST, 'email');
+        $password = filter_input(INPUT_POST, 'password');
+        $userId = filter_input(INPUT_POST, 'userId');
+
+        if ($email == NULL || $password == NULL) {
+            $error = 'Email and Password are not included';
+            include('error.php');
+        } else {
+            $userId = validate_login($email, $password);
+            echo "User ID IS: $userId";
+            if ($userId == false) {
+                header("Location: register.html");
+            } else {
+                header("Location: display.php?userId=$userId");
+            }
+        }
+        break;
+    }
+}
+//check_login($email, $password, $db);
+
+//validate_login($email, $password);
 
 ?>
 </form>

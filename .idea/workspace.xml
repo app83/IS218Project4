@@ -22,24 +22,23 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e7b381d-0028-4a30-b853-de1a4460d1cc" name="Default Changelist" comment="Files added">
-      <change afterPath="$PROJECT_DIR$/proj3/errors/database_error.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proj3/errors/error.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proj3/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proj3/model/accounts_db.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proj3/model/database.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proj3/model/questions_db.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proj3/views/abstract-views/footer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proj3/views/abstract-views/header.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proj3/views/display_questions.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proj3/views/login.php" afterDir="false" />
+    <list default="true" id="2e7b381d-0028-4a30-b853-de1a4460d1cc" name="Default Changelist" comment="proj 3 commits">
+      <change afterPath="$PROJECT_DIR$/database_error.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/error.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proj3/styles/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proj3/styles/output.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proj3/views/question_form.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/proj3/views/registration.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/display.php" beforeDir="false" afterPath="$PROJECT_DIR$/display.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question.html" beforeDir="false" afterPath="$PROJECT_DIR$/question.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj3/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/proj3/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj3/model/accounts_db.php" beforeDir="false" afterPath="$PROJECT_DIR$/proj3/model/accounts_db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj3/model/questions_db.php" beforeDir="false" afterPath="$PROJECT_DIR$/proj3/model/questions_db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj3/views/abstract-views/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/proj3/views/abstract-views/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj3/views/display_questions.php" beforeDir="false" afterPath="$PROJECT_DIR$/proj3/views/display_questions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj3/views/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/proj3/views/login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/question.php" beforeDir="false" afterPath="$PROJECT_DIR$/question.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/register.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,11 +81,15 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\amipa\Downloads\IS218Project2\proj3\styles" />
       <recent name="C:\Users\amipa\Downloads\IS218Project2\proj3" />
       <recent name="C:\Users\amipa\Downloads\IS218Project2\model" />
       <recent name="C:\Users\amipa\PhpstormProjects\IS218" />
       <recent name="C:\Users\amipa\PhpstormProjects\IS218\Project1" />
-      <recent name="C:\Users\amipa\PhpstormProjects\IS218\database" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\amipa\Downloads\IS218Project2" />
+      <recent name="C:\Users\amipa\Downloads\IS218Project2\proj3" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -108,7 +111,10 @@
       <workItem from="1606757504455" duration="9432000" />
       <workItem from="1606769274244" duration="37000" />
       <workItem from="1606790768486" duration="1599000" />
-      <workItem from="1606862967094" duration="6878000" />
+      <workItem from="1606862967094" duration="7493000" />
+      <workItem from="1607022666402" duration="1425000" />
+      <workItem from="1607448153894" duration="6038000" />
+      <workItem from="1607469597603" duration="2521000" />
     </task>
     <task id="LOCAL-00001" summary="Files added">
       <created>1602022154344</created>
@@ -159,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606765998908</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="proj 3 commits">
+      <created>1606871682981</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1606871682981</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,7 +192,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Files added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Files added" />
+    <MESSAGE value="proj 3 commits" />
+    <option name="LAST_COMMIT_MESSAGE" value="proj 3 commits" />
   </component>
   <component name="WindowStateProjectService">
     <state x="234" y="0" key="#Deployment" timestamp="1602001279930">
@@ -198,22 +212,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="530" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1606703082883" />
-    <state x="520" y="238" key="Github.ShareDialog" timestamp="1606764082827">
+    <state x="520" y="238" key="Github.ShareDialog" timestamp="1607452330557">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="520" y="238" key="Github.ShareDialog/0.0.1280.680@0.0.1280.680" timestamp="1606764082827" />
+    <state x="520" y="238" key="Github.ShareDialog/0.0.1280.680@0.0.1280.680" timestamp="1607452330557" />
     <state x="461" y="45" key="Github.UntrackedFilesDialog" timestamp="1606764098487">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="461" y="45" key="Github.UntrackedFilesDialog/0.0.1280.680@0.0.1280.680" timestamp="1606764098487" />
-    <state x="585" y="264" key="NewPhpFileDialog" timestamp="1606870206769">
+    <state x="585" y="264" key="NewPhpFileDialog" timestamp="1607448739825">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="585" y="264" key="NewPhpFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1606870206769" />
-    <state x="234" y="73" key="Vcs.Push.Dialog.v2" timestamp="1606871645646">
+    <state x="585" y="264" key="NewPhpFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1607448739825" />
+    <state x="234" y="73" key="Vcs.Push.Dialog.v2" timestamp="1606871651438">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="234" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1606871645646" />
+    <state x="234" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1606871651438" />
     <state x="498" y="239" key="WebDeployment.AddServerDialog.v.1" timestamp="1602001021572">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

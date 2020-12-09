@@ -7,6 +7,7 @@ $lname = filter_input(INPUT_POST, 'lname');
 $birthday = filter_input(INPUT_POST, 'birthday');
 $email = filter_input(INPUT_POST, 'email');
 $password = filter_input(INPUT_POST, 'password');
+$userId = filter_input(INPUT_GET, 'userId');
 /*
  $action = filter_input(INPUT_POST, 'action');
 if ($action == NULL) {
@@ -84,6 +85,8 @@ switch ($action) {
 
 <h2>Questions Added by the User:</h2>
 <h2><?php echo "Welcome" .''. $fname . '' . $lname . "!";?></h2>
+
+<!--<a href="Location: display_questions&userId=<?php echo $userId; ?>">Add Question</a>-->
 
 <?php get_question($userId); ?>
 
