@@ -1,8 +1,8 @@
 <?php
 
-require('proj3/model/database.php');
-require('proj3/model/accounts_db.php');
-require('proj3/model/questions_db.php');
+require('model/database.php');
+require('model/accounts_db.php');
+require('model/questions_db.php');
 
 $action = filter_input(INPUT_POST, 'action');
 if ($action == NULL) {
@@ -47,7 +47,6 @@ switch ($action) {
 
     case 'register': {
         //code here for registering a new user
-        $userId = filter_input(INPUT_GET, 'userId');
         $fname = filter_input(INPUT_POST, 'fname');
         $lname = filter_input(INPUT_POST, 'lname');
         $birthday = filter_input(INPUT_POST, 'birthday');
@@ -60,8 +59,7 @@ switch ($action) {
             header('Location: .?action=display_registration');
         } else {
             create_new_user($fname, $lname, $birthday, $email, $password);
-            include('views/display_questions.php');
-            header("Location: .?action=display_questions&userId=$userId");
+            header("Location: .");
         }
         break;
     }
@@ -104,7 +102,7 @@ switch ($action) {
         break;
     }
     case 'display_edit_question': {
-        //code here to display the edit question form
+        //display the edit question form
         $userId = filter_input(INPUT_GET, 'userId');
         if ($userId == NULL || $userId < 0) {
             header('Location: .?action=display_login');
@@ -126,7 +124,8 @@ switch ($action) {
             include('errors/error.php');
         } else {
            edit_question($questionId, $title, $body, $skills);
-            header("Location: .?action=display_edit_question&userId=$userId");
+           //header("Location: .?action=display_edit_question&userId=$userId");
+           header("Location: .?action=display_questions&userId=$userId");
         }
     }
 

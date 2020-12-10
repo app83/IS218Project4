@@ -3,7 +3,7 @@
 <!-- the head section -->
 <head>
     <title>IS218 Project</title>
-    <link rel="stylesheet" href="proj3/styles/main.css">
+    <link rel="stylesheet" href="styles/main.css">
 
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           rel="stylesheet"

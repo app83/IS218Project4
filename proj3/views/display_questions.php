@@ -20,6 +20,15 @@
                 <td><?php echo $question['skills']; ?></td>
                 <td>
                     <form action="." method="post">
+                        <input type="hidden" name="action" value="edit_question">
+                        <input type="hidden" name="questionId" value="<?php echo $question['id']; ?>">
+                        <input type="hidden" name="userId" value="<?php echo $userId; ?>">
+
+                        <input type="submit" value="Edit">
+                    </form>
+                </td>
+                <td>
+                    <form action="." method="post">
                         <input type="hidden" name="action" value="delete_question">
                         <input type="hidden" name="questionId" value="<?php echo $question['id']; ?>">
                         <input type="hidden" name="userId" value="<?php echo $userId; ?>">

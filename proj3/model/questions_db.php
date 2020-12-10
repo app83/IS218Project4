@@ -64,8 +64,6 @@ function edit_question($questionId, $title, $body, $skills){
     $statement->bindValue(':skills', $skills);
     $statement->bindValue(':questionId', $questionId);
     $statement->execute();
-    $editted_questions = $statement->fetchAll();
     $statement->closeCursor();
-    return $editted_questions;
 }
 ?>

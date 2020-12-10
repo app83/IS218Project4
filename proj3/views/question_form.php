@@ -2,8 +2,8 @@
 
     <h2>New Question Form</h2>
 
-    <form action="../index.php" method="POST">
-        <input type="hidden" name="action" value="question_form">
+    <form action="index.php" method="POST">
+        <input type="hidden" name="action" value="submit_question">
         <input type="hidden" name="userId" value="<?php echo $userId; ?>">
         <input type="hidden" name="questionId" value ="questionId">
 
