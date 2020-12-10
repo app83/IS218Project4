@@ -23,23 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e7b381d-0028-4a30-b853-de1a4460d1cc" name="Default Changelist" comment="proj 3 commits">
-      <change afterPath="$PROJECT_DIR$/database_error.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/error.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proj3/styles/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proj3/styles/output.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proj3/views/question_form.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/proj3/views/registration.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/display.php" beforeDir="false" afterPath="$PROJECT_DIR$/display.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proj3/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/proj3/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proj3/model/accounts_db.php" beforeDir="false" afterPath="$PROJECT_DIR$/proj3/model/accounts_db.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proj3/model/questions_db.php" beforeDir="false" afterPath="$PROJECT_DIR$/proj3/model/questions_db.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proj3/views/abstract-views/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/proj3/views/abstract-views/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proj3/views/display_questions.php" beforeDir="false" afterPath="$PROJECT_DIR$/proj3/views/display_questions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proj3/views/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/proj3/views/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/question.php" beforeDir="false" afterPath="$PROJECT_DIR$/question.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +99,8 @@
       <workItem from="1606862967094" duration="7493000" />
       <workItem from="1607022666402" duration="1425000" />
       <workItem from="1607448153894" duration="6038000" />
-      <workItem from="1607469597603" duration="2521000" />
+      <workItem from="1607469597603" duration="3548000" />
+      <workItem from="1607613319394" duration="638000" />
     </task>
     <task id="LOCAL-00001" summary="Files added">
       <created>1602022154344</created>
@@ -172,11 +158,28 @@
       <option name="project" value="LOCAL" />
       <updated>1606871682981</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="proj 3 commits">
+      <created>1607472399854</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1607472399854</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -208,10 +211,14 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="218" y="0" key="#SSH_Configurations/0.0.1280.680@0.0.1280.680" timestamp="1602001125625" />
-    <state x="530" y="95" key="FileChooserDialogImpl" timestamp="1606703082883">
+    <state x="530" y="95" key="FileChooserDialogImpl" timestamp="1607472950888">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="530" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1606703082883" />
+    <state x="530" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1607472950888" />
+    <state x="465" y="260" key="Github.CreateGistDialog" timestamp="1607473028381">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="465" y="260" key="Github.CreateGistDialog/0.0.1280.680@0.0.1280.680" timestamp="1607473028381" />
     <state x="520" y="238" key="Github.ShareDialog" timestamp="1607452330557">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -224,10 +231,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="585" y="264" key="NewPhpFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1607448739825" />
-    <state x="234" y="73" key="Vcs.Push.Dialog.v2" timestamp="1606871651438">
+    <state x="234" y="73" key="Vcs.Push.Dialog.v2" timestamp="1607472909062">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="234" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1606871651438" />
+    <state x="234" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607472909062" />
     <state x="498" y="239" key="WebDeployment.AddServerDialog.v.1" timestamp="1602001021572">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
