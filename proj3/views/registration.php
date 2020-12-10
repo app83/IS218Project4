@@ -6,7 +6,7 @@
 
 <form action="../index.php" method="POST">
     <input type="hidden" name="action" value ="register_form">
-    <input type="hidden" name="userId" value ="userId">
+    <input type="hidden" name="userId" value="<?php echo $userId; ?>">
 
     First Name: <input type=text name="fname" id="fname" ><br><br>
     Last Name: <input type=text name="lname" id="lname" ><br><br>

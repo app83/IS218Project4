@@ -1,13 +1,20 @@
 <?php
 
-function create_question ($title, $boedy, $skills, $ownerid){
+function create_question ($title, $body, $skills, $ownerid){
     global $db;
-    $query = 'INSERT INTO questions (title, body, skills, ownerid)
-	VALUES (:title, :body, :skills, :ownerid)';
+    $query = 'INSERT INTO questions 
+                 (title, body, skills, ownerid)
+	          VALUES 
+	             (:title, :body, :skills, :ownerid)';
     $statement = $db->prepare($query);
+    $statement->bindValue(':title', $title);
+    $statement->bindValue(':body', $body);
+    $statement->bindValue(':skills', $skills);
+    $statement->bindValue(':ownerid', $ownerid);
     $statement->execute();
     $statement->closeCursor();
 }
+
 function get_all_questions (){
     global $db;
     $query = 'SELECT * FROM questions';
@@ -20,7 +27,7 @@ function get_all_questions (){
     return $questions;
 
 }
-function get_user_questions ($userId){
+function get_users_questions ($userId){
 
     global $db;
     $query = 'SELECT * FROM questions WHERE ownerid = :userId';

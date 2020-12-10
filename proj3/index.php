@@ -1,5 +1,4 @@
 <?php
-//index.php for mvc:
 
 require('proj3/model/database.php');
 require('proj3/model/accounts_db.php');
@@ -15,11 +14,13 @@ if ($action == NULL) {
 
 switch ($action) {
     case 'show_login': {
+        //displays login page on screen
         include('views/login.php');
         break;
     }
 
     case 'validate_login': {
+        //checks for valid login info
         $email = filter_input(INPUT_POST, 'email');
         $password = filter_input(INPUT_POST, 'password');
 
@@ -39,44 +40,57 @@ switch ($action) {
     }
 
     case 'display_registration': {
+        //gets the registration form on screen
         include('views/registration.php');
         break;
     }
 
     case 'register': {
-        //code here
+        //code here for registering a new user
+        $userId = filter_input(INPUT_GET, 'userId');
+
     }
 
     case 'display_questions': {
+        //displays questions on screen for the user
         $userId = filter_input(INPUT_GET, 'userId');
+        $listType = filter_input(INPUT_GET, 'listType');
         if ($userId == NULL || $userId < 0) {
             header('Location: .?action=display_login');
         } else {
-            $questions = get_user_questions($userId);
+            $questions = ($listType === 'all') ?
+                get_all_questions() : get_users_questions($userId);
             include('views/display_questions.php');
         }
         break;
     }
 
     case 'display_question_form': {
+        //displays question form on screen
         $userId = filter_input(INPUT_GET, 'userId');
-        include('views/question_form.php');
+        if ($userId == NULL || $userId < 0) {
+            header('Location: .?action=display_login');
+        } else {
+            include('views/question_form.php');
+        }
         break;
     }
 
     case 'display_users': {
+        //gets the user that is logged in
         $userId = filter_input(INPUT_GET, 'userId');
         if ($userId == NULL) {
             $error = 'User Id unavailable';
             include('errors/error.php');
         } else {
-            $questions = get_user_questions($userId);
+            $questions = get_users_questions($userId);
             include('views/display_questions.php');
         }
         break;
     }
 
     case 'edit_question': {
+        //able to edit a question right from the website
         $questionId = filter_input(INPUT_POST, 'questionId');
         $userId = filter_input(INPUT_POST, 'userId');
         if ($questionId == NULL || $userId == NULL){
@@ -89,6 +103,7 @@ switch ($action) {
     }
 
     case 'delete_question': {
+        //able to delete a question from the website
         $questionId = filter_input(INPUT_POST, 'questionId');
         $userId = filter_input(INPUT_POST, 'userId');
         if ($questionId == NULL || $userId == NULL){
@@ -101,18 +116,20 @@ switch ($action) {
     }
 
     case 'submit_question': {
+        //submitting a question form
         $userId = filter_input(INPUT_POST, 'userId');
         $title = filter_input(INPUT_POST, 'title');
         $body = filter_input(INPUT_POST, 'body');
         $skills = filter_input(INPUT_POST, 'skills');
 
-        if ($userId == NULL || $title == NULL || $body == NULL || $skills == NULL){
-            echo "All fields are required";
-        }
-        else
-        {   create_question($title, $body, $skills, $userId);
+        if ($userId == NULL || $title == NULL || $body == NULL || $skills == NULL) {
+            $error = 'All fields are required';
+            include('errors/error.php');
+        } else {
+            create_question($title, $body, $skills, $userId);
             header("Location: .?action=display_questions&userId=$userId");
         }
+
         break;
     }
 

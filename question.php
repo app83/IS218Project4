@@ -30,26 +30,28 @@ if ($action == NULL) {
 }
 
 switch ($action) {
-case 'show_login': {
-    include('index.html');
-    break;
-}
-case 'question_form':
-{
-    $title = filter_input(INPUT_POST, 'title');
-    $body = filter_input(INPUT_POST, 'body');
-    $skills = filter_input(INPUT_POST, 'skills');
-    $skills = explode(',', $skills);
-    $skills = ($skills !== NULL) ? $skills : array();
-    $userId = filter_input(INPUT_GET, 'userId');
+    case 'show_login':
+    {
+        include('index.html');
+        break;
+    }
+    case 'question_form':
+    {
+        $title = filter_input(INPUT_POST, 'title');
+        $body = filter_input(INPUT_POST, 'body');
+        $skills = filter_input(INPUT_POST, 'skills');
+        $skills = explode(',', $skills);
+        $skills = ($skills !== NULL) ? $skills : array();
+        $userId = filter_input(INPUT_GET, 'userId');
 
-     if ($title == NULL || $body == NULL || $skills == NULL || strlen($title) < 3 || strlen($body) > 500 || count($skills) < 2 ){
-         $error = 'All fields are not included';
-         include('error.php');
-    } else {
-       add_question($userId, $title, $body, $skills);
-       header("Location: display.php?userId=$userId");
+        if ($title == NULL || $body == NULL || $skills == NULL || strlen($title) < 3 || strlen($body) > 500 || count($skills) < 2) {
+            $error = 'All fields are not included';
+            include('error.php');
+        } else {
+            add_question($userId, $title, $body, $skills);
+            header("Location: display.php?userId=$userId");
 
+        }
     }
 }
 //check_question($title, $body, $skills);
