@@ -31,6 +31,7 @@ function get_user($userId) {
     $user = $statement->fetch();
 
     $statement->closeCursor();
+    return $user;
 
 }
 
@@ -48,6 +49,6 @@ function create_new_user($fname, $lname, $birthday, $email, $password) {
 
     $statement->execute();
     $statement->closeCursor();
-    
+
 }
 ?>

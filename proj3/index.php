@@ -45,21 +45,21 @@ switch ($action) {
         break;
     }
 
-    case 'register': {
-        //code here for registering a new user
+    case 'register_form': {
+        //registers a new user
         $fname = filter_input(INPUT_POST, 'fname');
         $lname = filter_input(INPUT_POST, 'lname');
         $birthday = filter_input(INPUT_POST, 'birthday');
         $email = filter_input(INPUT_POST, 'email');
         $password = filter_input(INPUT_POST, 'password');
 
-        if ($userId == NULL || $userId < 0 || $fname == NULL || $lname == NULL || $birthday == NULL || $email == NULL || $password == NULL) {
+        if ($fname == NULL || $lname == NULL || $birthday == NULL || $email == NULL || $password == NULL) {
             $error = 'All fields are required';
             include('errors/error.php');
             header('Location: .?action=display_registration');
         } else {
             create_new_user($fname, $lname, $birthday, $email, $password);
-            header("Location: .");
+            header("Location: .?action=display_login");
         }
         break;
     }
@@ -89,7 +89,7 @@ switch ($action) {
         break;
     }
 
-    case 'display_users': {
+   case 'display_users': {
         //gets the user that is logged in
         $userId = filter_input(INPUT_GET, 'userId');
         if ($userId == NULL) {

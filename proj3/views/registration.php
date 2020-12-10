@@ -2,7 +2,7 @@
 
 <h2>Registration Form</h2>
 
-<form action="index.php" method="POST">
+<form action="../index.php" method="POST">
     <input type="hidden" name="action" value ="register_form">
     <input type="hidden" name="userId" value="<?php echo $userId; ?>">
 
@@ -14,6 +14,6 @@
     <input type=submit value="Register">
 
 </form>
-Existing User? <a href="login.php">Login Here</a>
+<br><br>Existing User? <a href="login.php">Login Here</a>
 
 <?php include('abstract-views/footer.php'); ?>

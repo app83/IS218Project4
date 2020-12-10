@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-<!-- the head section -->
 <head>
     <title>IS218 Project</title>
     <link rel="stylesheet" href="styles/main.css">
@@ -11,9 +10,8 @@
           crossorigin="anonymous">
 
 </head>
-<!-- the body section -->
-<body>
 
+<body>
 
 <div class="container">
     <header><h1>IS218 Project</h1></header>
