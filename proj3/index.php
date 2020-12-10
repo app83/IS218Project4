@@ -88,17 +88,30 @@ switch ($action) {
         }
         break;
     }
-
+    case 'display_edit_question': {
+        //code here to display the edit question form
+        $userId = filter_input(INPUT_GET, 'userId');
+        if ($userId == NULL || $userId < 0) {
+            header('Location: .?action=display_login');
+        } else {
+            include('views/edit_question_form.php');
+        }
+        break;
+    }
     case 'edit_question': {
         //able to edit a question right from the website
         $questionId = filter_input(INPUT_POST, 'questionId');
         $userId = filter_input(INPUT_POST, 'userId');
+        $title = filter_input(INPUT_POST, 'title');
+        $body = filter_input(INPUT_POST, 'body');
+        $skills = filter_input(INPUT_POST, 'skills');
+
         if ($questionId == NULL || $userId == NULL){
             $error = "All fields are required";
             include('errors/error.php');
         } else {
-           edit_question($questionId);
-            header("Location: .?action=display_questions&userId=$userId");
+           edit_question($questionId, $title, $body, $skills);
+            header("Location: .?action=display_edit_question&userId=$userId");
         }
     }
 

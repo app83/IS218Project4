@@ -1,20 +1,5 @@
 <?php
 
-function create_question ($title, $body, $skills, $ownerid){
-    global $db;
-    $query = 'INSERT INTO questions 
-                 (title, body, skills, ownerid)
-	          VALUES 
-	             (:title, :body, :skills, :ownerid)';
-    $statement = $db->prepare($query);
-    $statement->bindValue(':title', $title);
-    $statement->bindValue(':body', $body);
-    $statement->bindValue(':skills', $skills);
-    $statement->bindValue(':ownerid', $ownerid);
-    $statement->execute();
-    $statement->closeCursor();
-}
-
 function get_all_questions (){
     global $db;
     $query = 'SELECT * FROM questions';
@@ -27,6 +12,7 @@ function get_all_questions (){
     return $questions;
 
 }
+
 function get_users_questions ($userId){
 
     global $db;
@@ -43,6 +29,21 @@ function get_users_questions ($userId){
 
 }
 
+function create_question ($title, $body, $skills, $ownerid){
+    global $db;
+    $query = 'INSERT INTO questions 
+                 (title, body, skills, ownerid)
+	          VALUES 
+	             (:title, :body, :skills, :ownerid)';
+    $statement = $db->prepare($query);
+    $statement->bindValue(':title', $title);
+    $statement->bindValue(':body', $body);
+    $statement->bindValue(':skills', $skills);
+    $statement->bindValue(':ownerid', $ownerid);
+    $statement->execute();
+    $statement->closeCursor();
+}
+
 function delete_question($questionId){
     global $db;
     $query = 'DELETE FROM questions WHERE id = :questionId';
@@ -52,10 +53,15 @@ function delete_question($questionId){
     $statement->closeCursor();
 }
 
-function edit_question($questionId){
+function edit_question($questionId, $title, $body, $skills){
     global $db;
-    $query = 'UPDATE questions WHERE id = :questionId';
+    $query = 'UPDATE questions 
+                SET title = :title, body = :body, skills = :skills
+                WHERE id = :questionId';
     $statement = $db->prepare($query);
+    $statement->bindValue(':title', $title);
+    $statement->bindValue(':body', $body);
+    $statement->bindValue(':skills', $skills);
     $statement->bindValue(':questionId', $questionId);
     $statement->execute();
     $editted_questions = $statement->fetchAll();
