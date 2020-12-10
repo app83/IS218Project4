@@ -48,7 +48,22 @@ switch ($action) {
     case 'register': {
         //code here for registering a new user
         $userId = filter_input(INPUT_GET, 'userId');
+        $fname = filter_input(INPUT_POST, 'fname');
+        $lname = filter_input(INPUT_POST, 'lname');
+        $birthday = filter_input(INPUT_POST, 'birthday');
+        $email = filter_input(INPUT_POST, 'email');
+        $password = filter_input(INPUT_POST, 'password');
 
+        if ($userId == NULL || $userId < 0 || $fname == NULL || $lname == NULL || $birthday == NULL || $email == NULL || $password == NULL) {
+            $error = 'All fields are required';
+            include('errors/error.php');
+            header('Location: .?action=display_registration');
+        } else {
+            create_new_user($fname, $lname, $birthday, $email, $password);
+            include('views/display_questions.php');
+            header("Location: .?action=display_questions&userId=$userId");
+        }
+        break;
     }
 
     case 'display_questions': {

@@ -1,7 +1,5 @@
 <?php include('abstract-views/header.php'); ?>
 
-<body>
-
 <h2>Registration Form</h2>
 
 <form action="../index.php" method="POST">
@@ -17,6 +15,5 @@
 
 </form>
 Existing User? <a href="login.php">Login Here</a>
-</body>
 
 <?php include('abstract-views/footer.php'); ?>
