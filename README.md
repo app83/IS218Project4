@@ -1,6 +1,8 @@
 # IS218
-Project 2:
+Project 3:
 
-Login Form, Registration Form, New Question Form
+Changed the project from regular project to MVC pattern project using views, model, and controller file. 
 
-Display.php is the Home page that the login and registration forms will redirect to after being submitted.
+index.php is the main file
+
+edit and delete buttons are added.
