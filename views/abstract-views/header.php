@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>IS218 Project</title>
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
 
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           rel="stylesheet"
@@ -12,9 +12,7 @@
 
 </head>
 
-<body>
+<h5>IS218 Project</h5><br>
 
+<body>
 <div class="container">
-    <header>
-        <h4>IS218 Project</h4><br>
-    </header>

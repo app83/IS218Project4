@@ -1,7 +1,7 @@
 <?php
 
 $username = 'app83';
-$password = 'Dreambig11!';
+$password = 'Dreambig1!';
 $dsn = 'mysql:host=sql1.njit.edu;dbname=app83';
 
 try {

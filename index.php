@@ -59,7 +59,7 @@ switch ($action) {
             header('Location: .?action=display_registration');
         } else {
             create_new_user($fname, $lname, $birthday, $email, $password);
-            header("Location: .?action=display_login");
+            header("Location: .?action=show_login");
         }
         break;
     }
@@ -69,7 +69,7 @@ switch ($action) {
         $userId = filter_input(INPUT_GET, 'userId');
         $listType = filter_input(INPUT_GET, 'listType');
         if ($userId == NULL || $userId < 0) {
-            header('Location: .?action=display_login');
+            header('Location: .?action=show_login');
         } else {
             $questions = ($listType === 'all') ?
                 get_all_questions() : get_users_questions($userId);
@@ -82,7 +82,7 @@ switch ($action) {
         //displays question form on screen
         $userId = filter_input(INPUT_GET, 'userId');
         if ($userId == NULL || $userId < 0) {
-            header('Location: .?action=display_login');
+            header('Location: .?action=show_login');
         } else {
             include('views/question_form.php');
         }
@@ -105,7 +105,7 @@ switch ($action) {
         //display the edit question form
         $userId = filter_input(INPUT_GET, 'userId');
         if ($userId == NULL || $userId < 0) {
-            header('Location: .?action=display_login');
+            header('Location: .?action=show_login');
         } else {
             include('views/edit_question_form.php');
         }
@@ -124,8 +124,8 @@ switch ($action) {
             include('errors/error.php');
         } else {
            edit_question($questionId, $title, $body, $skills);
-           //header("Location: .?action=display_edit_question&userId=$userId");
-           header("Location: .?action=display_questions&userId=$userId");
+           header("Location: .?action=display_edit_question&userId=$userId");
+           //header("Location: .?action=display_questions&userId=$userId");
         }
         break;
     }
