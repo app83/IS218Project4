@@ -23,15 +23,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e7b381d-0028-4a30-b853-de1a4460d1cc" name="Default Changelist" comment="proj 3 commits">
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/IS218.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/IS218Project3.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proj3/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/proj3/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proj3/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/proj3/styles/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proj3/views/abstract-views/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/proj3/views/abstract-views/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proj3/views/edit_question_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/proj3/views/edit_question_form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proj3/views/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/proj3/views/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proj3/views/question_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/proj3/views/question_form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/proj3/views/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/proj3/views/registration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj2/database.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj2/database_error.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj2/display.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj2/error.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj2/functions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj2/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj2/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj2/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj2/output.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj2/question.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj2/question.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj2/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj2/register.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj3/errors/database_error.php" beforeDir="false" afterPath="$PROJECT_DIR$/errors/database_error.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj3/errors/error.php" beforeDir="false" afterPath="$PROJECT_DIR$/errors/error.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj3/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj3/model/accounts_db.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/accounts_db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj3/model/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj3/model/questions_db.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/questions_db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj3/styles/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj3/styles/output.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/output.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj3/views/abstract-views/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/abstract-views/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj3/views/abstract-views/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/abstract-views/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj3/views/display_questions.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/display_questions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj3/views/edit_question_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/edit_question_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj3/views/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj3/views/question_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/question_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/proj3/views/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/registration.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,16 +93,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\amipa\Downloads\IS218Project2" />
-      <recent name="C:\Users\amipa\Downloads\IS218Project2\proj3" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\amipa\Downloads\IS218Project2" />
       <recent name="C:\Users\amipa\Downloads\IS218Project2\proj3\styles" />
       <recent name="C:\Users\amipa\Downloads\IS218Project2\proj3" />
       <recent name="C:\Users\amipa\Downloads\IS218Project2\model" />
       <recent name="C:\Users\amipa\PhpstormProjects\IS218" />
-      <recent name="C:\Users\amipa\PhpstormProjects\IS218\Project1" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\amipa\Downloads\IS218Project2" />
+      <recent name="C:\Users\amipa\Downloads\IS218Project2\proj3" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -108,7 +129,7 @@
       <workItem from="1607448153894" duration="6038000" />
       <workItem from="1607469597603" duration="3548000" />
       <workItem from="1607613319394" duration="17203000" />
-      <workItem from="1607713891210" duration="1844000" />
+      <workItem from="1607713891210" duration="2456000" />
     </task>
     <task id="LOCAL-00001" summary="Files added">
       <created>1602022154344</created>
@@ -222,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607655316570</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="proj 3 commits">
+      <created>1607715903395</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1607715903395</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,10 +320,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="585" y="264" key="NewPhpFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1607627047334" />
-    <state x="234" y="73" key="Vcs.Push.Dialog.v2" timestamp="1607655318641">
+    <state x="234" y="73" key="Vcs.Push.Dialog.v2" timestamp="1607715906621">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="234" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607655318641" />
+    <state x="234" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1607715906621" />
     <state x="498" y="239" key="WebDeployment.AddServerDialog.v.1" timestamp="1602001021572">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
