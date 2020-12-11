@@ -127,6 +127,7 @@ switch ($action) {
            //header("Location: .?action=display_edit_question&userId=$userId");
            header("Location: .?action=display_questions&userId=$userId");
         }
+        break;
     }
 
     case 'delete_question': {

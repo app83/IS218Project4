@@ -2,7 +2,7 @@
 
 <h2>Registration Form</h2>
 
-<form action="../index.php" method="POST">
+<form action="../index.php" method="POST" class="regularForm">
     <input type="hidden" name="action" value ="register_form">
     <input type="hidden" name="userId" value="<?php echo $userId; ?>">
 

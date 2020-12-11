@@ -1,6 +1,6 @@
 <?php include('abstract-views/header.php'); ?>
 
-<form action="../index.php" method="post">
+<form action="../index.php" method="post" class="regularForm">
     <input type="hidden" name="action" value="validate_login">
 
     Email: <input type=email name="email" id="email" ><br><br>
