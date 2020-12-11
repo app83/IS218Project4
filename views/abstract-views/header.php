@@ -16,5 +16,5 @@
 
 <div class="container">
     <header>
-        <h1>IS218 Project</h1><br>
+        <h4>IS218 Project</h4><br>
     </header>

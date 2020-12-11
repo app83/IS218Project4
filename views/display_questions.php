@@ -1,12 +1,14 @@
 <?php include('abstract-views/header.php'); ?>
 
+    <h2>Displaying Questions</h2>
+    <h4>For User ID #: <?php echo $userId; ?></h4><br>
+
     <div class="row">
         <div class="col-sm-4"><a href="?action=display_question_form&userId=<?php echo $userId ?>" class="btn btn-info">Add Questions</a></div>
         <div class="col-sm-4"><a href="?action=display_questions&userId=<?php echo $userId; ?>&listType=mine" class="btn btn-info">My Questions</a></div>
         <div class="col-sm-4"><a href="?action=display_questions&userId=<?php echo $userId; ?>&listType=all" class="btn btn-info">All Questions</a></div>
     </div>
-
-    <br><h2>Questions for User ID #: <?php echo $userId; ?></h2>
+    <br>
 
     <table class="table table-bordered table-sm" >
         <tr>
