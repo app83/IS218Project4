@@ -1,17 +1,20 @@
 <?php include('abstract-views/header.php'); ?>
 
-    <a href=".?action=display_question_form&userId=<?php echo $userId ?>">Add Questions</a>
+    <div class="row">
+        <div class="col-sm-4"><a href=".?action=display_question_form&userId=<?php echo $userId ?>" class="btn btn-info">Add Questions</a></div>
+        <div class="col-sm-4"><a href=".?action=display_questions&userId=<?php echo $userId; ?>&listType=mine" class="btn btn-info">My Questions</a></div>
+        <div class="col-sm-4"><a href=".?action=display_questions&userId=<?php echo $userId; ?>&listType=all" class="btn btn-info">All Questions</a></div>
+    </div>
 
-    <a href=".?action=display_questions&userId=<?php echo $userId; ?>&listType=mine">My Questions</a>
-    <a href=".?action=display_questions&userId=<?php echo $userId; ?>&listType=all">All Questions</a>
+    <br><h2>Questions for User ID #: <?php echo $userId; ?></h2>
 
-    <h2>Questions for User ID #: <?php echo $userId; ?></h2>
-
-    <table class="table">
+    <table class="table table-bordered table-sm" >
         <tr>
             <th>Title</th>
             <th>Body</th>
             <th>Skills</th>
+            <th>Edit</th>
+            <th>Delete</th>
         </tr>
         <?php foreach ($questions as $question) : ?>
             <tr>
@@ -24,7 +27,7 @@
                         <input type="hidden" name="questionId" value="<?php echo $question['id']; ?>">
                         <input type="hidden" name="userId" value="<?php echo $userId; ?>">
 
-                        <input type="submit" value="Edit">
+                        <button value="Edit"><i class='fas fa-edit' style="color:green;"></i></button>
                     </form>
                 </td>
                 <td>
@@ -33,7 +36,7 @@
                         <input type="hidden" name="questionId" value="<?php echo $question['id']; ?>">
                         <input type="hidden" name="userId" value="<?php echo $userId; ?>">
 
-                        <input type="submit" value="Delete">
+                        <button value="Delete"><i class='fas fa-trash' style="color:firebrick;"></i></button>
                     </form>
                 </td>
             </tr>
