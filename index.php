@@ -28,7 +28,7 @@ switch ($action) {
             $error = 'Email and Password are not included';
             include('errors/error.php');
         } else {
-            $userId = validate_login($email, $password);
+            $userId = AccountsDB::validate_login($email, $password);
             echo "User ID IS: $userId";
             if ($userId == false) {
                 header("Location: .?action=display_registration");
@@ -58,7 +58,7 @@ switch ($action) {
             include('errors/error.php');
             header('Location: .?action=display_registration');
         } else {
-            create_new_user($fname, $lname, $birthday, $email, $password);
+            AccountsDB::create_new_user($fname, $lname, $birthday, $email, $password);
             header("Location: .?action=show_login");
         }
         break;
@@ -72,7 +72,7 @@ switch ($action) {
             header('Location: .?action=show_login');
         } else {
             $questions = ($listType === 'all') ?
-                get_all_questions() : get_users_questions($userId);
+                QuestionsDB::get_all_questions() : QuestionsDB::get_users_questions($userId);
             include('views/display_questions.php');
         }
         break;
@@ -96,7 +96,7 @@ switch ($action) {
             $error = 'User Id unavailable';
             include('errors/error.php');
         } else {
-            $questions = get_users_questions($userId);
+            $questions = QuestionsDB::get_users_questions($userId);
             include('views/display_questions.php');
         }
         break;
@@ -123,7 +123,7 @@ switch ($action) {
             $error = "All fields are required";
             include('errors/error.php');
         } else {
-           edit_question($questionId, $title, $body, $skills);
+           QuestionsDB::edit_question($questionId, $title, $body, $skills);
            header("Location: .?action=display_edit_question&userId=$userId");
            //header("Location: .?action=display_questions&userId=$userId");
         }
@@ -138,7 +138,7 @@ switch ($action) {
             $error = "All fields are required";
             include('errors/error.php');
         } else {
-            delete_question($questionId);
+            QuestionsDB::delete_question($questionId);
             header("Location: .?action=display_questions&userId=$userId");
         }
     }
@@ -154,7 +154,7 @@ switch ($action) {
             $error = 'All fields are required';
             include('errors/error.php');
         } else {
-            create_question($title, $body, $skills, $userId);
+            QuestionsDB::create_question($title, $body, $skills, $userId);
             header("Location: .?action=display_questions&userId=$userId");
         }
 
