@@ -13,8 +13,8 @@ class Database {
                 self::$db = new PDO(self::$dsn,
                     self::$username,
                     self::$password);
-            } catch (PDOException $e) {
-                $error_message = $e->getMessage();
+            } catch (PDOException $error) {
+                $error_message = $error->getMessage();
                 include('../errors/database_error.php');
                 exit();
             }

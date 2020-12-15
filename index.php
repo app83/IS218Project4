@@ -3,6 +3,7 @@
 require('model/database.php');
 require('model/accounts_db.php');
 require('model/questions_db.php');
+require('model/answers_db.php');
 
 $action = filter_input(INPUT_POST, 'action');
 if ($action == NULL) {
