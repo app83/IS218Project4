@@ -1,5 +1,5 @@
 <?php
-class AccountsDB {
+class Account {
     public static function validate_login($email, $password)
     {
         $db = Database::getDB();

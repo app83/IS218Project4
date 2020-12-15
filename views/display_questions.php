@@ -1,4 +1,7 @@
-<?php include('abstract-views/header.php'); ?>
+<?php
+session_start();
+include('abstract-views/header.php');
+?>
 
     <h2>Displaying Questions</h2>
     <h4>For User ID #: <?php echo $userId; ?></h4><br>
@@ -44,5 +47,9 @@
             </tr>
         <?php endforeach; ?>
     </table>
+    <form action="index.php" method="post">
+        <input type="hidden" name="action" value="logout">
+        <button class="btn btn-success" value="Logout">Logout</button>
 
+    </form>
 <?php include('abstract-views/footer.php'); ?>

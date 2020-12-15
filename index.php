@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 require('model/database.php');
 require('model/accounts_db.php');
@@ -29,7 +30,7 @@ switch ($action) {
             $error = 'Email and Password are not included';
             include('errors/error.php');
         } else {
-            $userId = AccountsDB::validate_login($email, $password);
+            $userId = Account::validate_login($email, $password);
             echo "User ID IS: $userId";
             if ($userId == false) {
                 header("Location: .?action=display_registration");
@@ -59,7 +60,7 @@ switch ($action) {
             include('errors/error.php');
             header('Location: .?action=display_registration');
         } else {
-            AccountsDB::create_new_user($fname, $lname, $birthday, $email, $password);
+            Account::create_new_user($fname, $lname, $birthday, $email, $password);
             header("Location: .?action=show_login");
         }
         break;
@@ -73,7 +74,7 @@ switch ($action) {
             header('Location: .?action=show_login');
         } else {
             $questions = ($listType === 'all') ?
-                QuestionsDB::get_all_questions() : QuestionsDB::get_users_questions($userId);
+                Question::get_all_questions() : Question::get_users_questions($userId);
             include('views/display_questions.php');
         }
         break;
@@ -97,7 +98,7 @@ switch ($action) {
             $error = 'User Id unavailable';
             include('errors/error.php');
         } else {
-            $questions = QuestionsDB::get_users_questions($userId);
+            $questions = Question::get_users_questions($userId);
             include('views/display_questions.php');
         }
         break;
@@ -124,7 +125,7 @@ switch ($action) {
             $error = "All fields are required";
             include('errors/error.php');
         } else {
-           QuestionsDB::edit_question($questionId, $title, $body, $skills);
+           Question::edit_question($questionId, $title, $body, $skills);
            header("Location: .?action=display_edit_question&userId=$userId");
            //header("Location: .?action=display_questions&userId=$userId");
         }
@@ -139,7 +140,7 @@ switch ($action) {
             $error = "All fields are required";
             include('errors/error.php');
         } else {
-            QuestionsDB::delete_question($questionId);
+            Question::delete_question($questionId);
             header("Location: .?action=display_questions&userId=$userId");
         }
     }
@@ -155,10 +156,14 @@ switch ($action) {
             $error = 'All fields are required';
             include('errors/error.php');
         } else {
-            QuestionsDB::create_question($title, $body, $skills, $userId);
+            Question::create_question($title, $body, $skills, $userId);
             header("Location: .?action=display_questions&userId=$userId");
         }
 
+        break;
+    }
+    case 'logout': {
+        include('views/logout.php');
         break;
     }
 

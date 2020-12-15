@@ -1,4 +1,7 @@
-<?php include('abstract-views/header.php'); ?>
+<?php
+session_start();
+include('abstract-views/header.php');
+?>
 
     <h2>New Question Form</h2>
 
