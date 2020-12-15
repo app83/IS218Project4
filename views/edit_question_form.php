@@ -8,7 +8,7 @@ include('abstract-views/header.php');
     <form action="index.php" method="POST" class="regularForm">
         <input type="hidden" name="action" value="edit_question">
         <input type="hidden" name="userId" value="<?php echo $userId; ?>">
-        <input type="hidden" name="questionId" value ="questionId">
+        <input type="hidden" name="questionId" value="<?php echo $question['id']; ?>">
 
         <div class="row">
             <div class="form-group col-md-4">

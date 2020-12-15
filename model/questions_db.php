@@ -81,6 +81,7 @@ class Question
         $statement->execute();
         $statement->closeCursor();
     }
+
     public static function newAnswer($title, $body, $skills, $ownerid)
     { //change the function based on what will be in the answers table!!!!
         $db = Database::getDB();

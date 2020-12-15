@@ -22,11 +22,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e7b381d-0028-4a30-b853-de1a4460d1cc" name="Default Changelist" comment="adding classes">
+    <list default="true" id="2e7b381d-0028-4a30-b853-de1a4460d1cc" name="Default Changelist" comment="edit function changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/questions_db.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/questions_db.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/display_questions.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/display_questions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/edit_question_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/edit_question_form.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +105,7 @@
       <workItem from="1607713891210" duration="12450000" />
       <workItem from="1607727524509" duration="130000" />
       <workItem from="1608052769936" duration="6097000" />
-      <workItem from="1608072846343" duration="2394000" />
+      <workItem from="1608072846343" duration="2673000" />
     </task>
     <task id="LOCAL-00001" summary="Files added">
       <created>1602022154344</created>
@@ -291,7 +289,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608061769894</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="edit function changes">
+      <created>1608075295805</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1608075295805</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -325,7 +330,8 @@
     <MESSAGE value="edit function commits" />
     <MESSAGE value="changing to classes" />
     <MESSAGE value="adding classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding classes" />
+    <MESSAGE value="edit function changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit function changes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="234" y="0" key="#Deployment" timestamp="1608052876781">
@@ -364,10 +370,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="585" y="264" key="NewPhpFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1608055573970" />
-    <state x="234" y="73" key="Vcs.Push.Dialog.v2" timestamp="1608061771324">
+    <state x="234" y="73" key="Vcs.Push.Dialog.v2" timestamp="1608075298611">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="234" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1608061771324" />
+    <state x="234" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1608075298611" />
     <state x="498" y="239" key="WebDeployment.AddServerDialog.v.1" timestamp="1602001021572">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
