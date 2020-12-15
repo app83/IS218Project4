@@ -18,6 +18,7 @@ include('abstract-views/header.php');
             <th>Title</th>
             <th>Body</th>
             <th>Skills</th>
+            <th>View</th>
             <th>Edit</th>
             <th>Delete</th>
         </tr>
@@ -28,7 +29,16 @@ include('abstract-views/header.php');
                 <td><?php echo $question['skills']; ?></td>
                 <td>
                     <form action="" method="post">
-                        <input type="hidden" name="action" value="edit_question">
+                        <input type="hidden" name="action" value="view_question">
+                        <input type="hidden" name="questionId" value="<?php echo $question['id']; ?>">
+                        <input type="hidden" name="userId" value="<?php echo $userId; ?>">
+
+                        <button value="View">View</button>
+                    </form>
+                </td>
+                <td>
+                    <form action="" method="post">
+                        <input type="hidden" name="action" value="display_edit_question">
                         <input type="hidden" name="questionId" value="<?php echo $question['id']; ?>">
                         <input type="hidden" name="userId" value="<?php echo $userId; ?>">
 

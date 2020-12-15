@@ -57,6 +57,15 @@ class Question
         $statement->execute();
         $statement->closeCursor();
     }
+    public static function get_question($questionId)
+    {
+        $db = Database::getDB();
+        $query = 'SELECT * FROM questions WHERE id = :questionId';
+        $statement = $db->prepare($query);
+        $statement->bindValue(':questionId', $questionId);
+        $statement->execute();
+        $statement->closeCursor();
+    }
 
     public static function edit_question($questionId, $title, $body, $skills)
     {

@@ -13,19 +13,22 @@ include('abstract-views/header.php');
         <div class="row">
             <div class="form-group col-md-4">
                 <label for="title">Question Name:</label>
-                <input class="form-control" type=text name="title" id="title">
+                <input class="form-control" type=text name="title" id="title"
+                       value="<?php echo $question['title'];?>">
             </div>
         </div>
         <div class="row">
             <div class="form-group col-md-4">
                 <label for="body">Question Body: </label>
-                <input class="form-control" type=text name="body" id="body">
+                <input class="form-control" type=text name="body" id="body"
+                       value="<?php echo $question['body'];?>">
             </div>
         </div>
         <div class="row">
             <div class="form-group col-md-4">
                 <label for="skills">Question Skills: </label>
-                <input class="form-control" type=text name="skills" id="skills">
+                <input class="form-control" type=text name="skills" id="skills"
+                       value="<?php echo $question['skills'];?>">
             </div>
         </div>
 

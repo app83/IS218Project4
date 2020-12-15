@@ -23,17 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e7b381d-0028-4a30-b853-de1a4460d1cc" name="Default Changelist" comment="adding classes">
-      <change afterPath="$PROJECT_DIR$/session.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/logout.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/accounts_db.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/accounts_db.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/answers_db.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/answers_db.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/questions_db.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/questions_db.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/display_questions.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/display_questions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/edit_question_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/edit_question_form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/question_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/question_form.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +106,8 @@
       <workItem from="1607613319394" duration="17203000" />
       <workItem from="1607713891210" duration="12450000" />
       <workItem from="1607727524509" duration="130000" />
-      <workItem from="1608052769936" duration="6071000" />
+      <workItem from="1608052769936" duration="6097000" />
+      <workItem from="1608072846343" duration="2394000" />
     </task>
     <task id="LOCAL-00001" summary="Files added">
       <created>1602022154344</created>
@@ -289,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608054607493</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="adding classes">
+      <created>1608061769894</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1608061769894</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,10 +364,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="585" y="264" key="NewPhpFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1608055573970" />
-    <state x="234" y="73" key="Vcs.Push.Dialog.v2" timestamp="1608054611032">
+    <state x="234" y="73" key="Vcs.Push.Dialog.v2" timestamp="1608061771324">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="234" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1608054611032" />
+    <state x="234" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1608061771324" />
     <state x="498" y="239" key="WebDeployment.AddServerDialog.v.1" timestamp="1602001021572">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

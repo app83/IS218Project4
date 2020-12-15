@@ -105,10 +105,12 @@ switch ($action) {
     }
     case 'display_edit_question': {
         //display the edit question form
-        $userId = filter_input(INPUT_GET, 'userId');
+        $userId = filter_input(INPUT_POST, 'userId');
+        $questionId = filter_input(INPUT_POST, 'questionId');
         if ($userId == NULL || $userId < 0) {
             header('Location: .?action=show_login');
         } else {
+            Question::get_question($questionId);
             include('views/edit_question_form.php');
         }
         break;
@@ -126,8 +128,8 @@ switch ($action) {
             include('errors/error.php');
         } else {
            Question::edit_question($questionId, $title, $body, $skills);
-           header("Location: .?action=display_edit_question&userId=$userId");
-           //header("Location: .?action=display_questions&userId=$userId");
+           //header("Location: .?action=display_edit_question&userId=$userId");
+           header("Location: .?action=display_questions&userId=$userId");
         }
         break;
     }
