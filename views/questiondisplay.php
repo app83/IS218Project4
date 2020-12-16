@@ -1,7 +1,8 @@
 <?php
-
+session_start();
 include('abstract-views/header.php');
 ?>
+
 <h2>Displaying Question</h2>
 <h4>For User ID #: <?php echo $userId; ?></h4><br>
 

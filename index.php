@@ -130,7 +130,6 @@ switch ($action) {
             include('errors/error.php');
         } else {
            QuestionDB::edit_question($questionId, $title, $body, $skills);
-           //header("Location: .?action=display_edit_question&userId=$userId");
            header("Location: .?action=display_questions&userId=$userId");
         }
         break;
@@ -167,8 +166,8 @@ switch ($action) {
         break;
     }
     case 'display_single_question': {
-        $userId = filter_input(INPUT_POST, 'userId');
-        $questionId = filter_input(INPUT_POST, 'questionId');
+        $userId = filter_input(INPUT_GET, 'userId');
+        $questionId = filter_input(INPUT_GET, 'questionId');
         if ($userId == NULL || $userId < 0) {
             header('Location: .?action=show_login');
         } else {
@@ -181,7 +180,6 @@ switch ($action) {
         include('views/logout.php');
         break;
     }
-
     default: {
         $error = 'Unknown Action';
         include('errors/error.php');
