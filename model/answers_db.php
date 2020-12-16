@@ -1,5 +1,5 @@
 <?php
-class Answer {
+class AnswerDB {
 
     public static function upVote()
     {

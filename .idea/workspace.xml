@@ -23,9 +23,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e7b381d-0028-4a30-b853-de1a4460d1cc" name="Default Changelist" comment="edit function changes">
+      <change afterPath="$PROJECT_DIR$/model/account.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/answer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model/question.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/questiondisplay.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/accounts_db.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/accounts_db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/answers_db.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/answers_db.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/questions_db.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/questions_db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/session.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/display_questions.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/display_questions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,16 +75,16 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\amipa\Downloads\IS218Project2" />
-      <recent name="C:\Users\amipa\Downloads\IS218Project2\proj3" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\amipa\Downloads\IS218Project2" />
       <recent name="C:\Users\amipa\Downloads\IS218Project2\proj3\styles" />
       <recent name="C:\Users\amipa\Downloads\IS218Project2\proj3" />
       <recent name="C:\Users\amipa\Downloads\IS218Project2\model" />
       <recent name="C:\Users\amipa\PhpstormProjects\IS218" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\amipa\Downloads\IS218Project2" />
+      <recent name="C:\Users\amipa\Downloads\IS218Project2\proj3" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -105,7 +114,7 @@
       <workItem from="1607713891210" duration="12450000" />
       <workItem from="1607727524509" duration="130000" />
       <workItem from="1608052769936" duration="6097000" />
-      <workItem from="1608072846343" duration="5191000" />
+      <workItem from="1608072846343" duration="7705000" />
     </task>
     <task id="LOCAL-00001" summary="Files added">
       <created>1602022154344</created>
@@ -303,7 +312,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608075620593</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="edit function changes">
+      <created>1608079427914</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1608079427914</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -377,14 +393,14 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="63" key="NewPhpClassDialog/0.0.1280.680@0.0.1280.680" timestamp="1608078310010" />
-    <state x="585" y="264" key="NewPhpFileDialog" timestamp="1608078324665">
+    <state x="585" y="264" key="NewPhpFileDialog" timestamp="1608080963627">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="585" y="264" key="NewPhpFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1608078324665" />
-    <state x="234" y="73" key="Vcs.Push.Dialog.v2" timestamp="1608075621770">
+    <state x="585" y="264" key="NewPhpFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1608080963627" />
+    <state x="234" y="73" key="Vcs.Push.Dialog.v2" timestamp="1608079429482">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="234" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1608075621770" />
+    <state x="234" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1608079429482" />
     <state x="498" y="239" key="WebDeployment.AddServerDialog.v.1" timestamp="1602001021572">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -393,6 +409,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="460" y="254" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1602022194652" />
+    <state x="43" y="0" width="1249" height="666" key="dock-window-1" timestamp="1608080161864">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="43" y="0" width="1249" height="666" key="dock-window-1/0.0.1280.680@0.0.1280.680" timestamp="1608080161864" />
     <state x="474" y="154" key="run.anything.popup" timestamp="1608055387249">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

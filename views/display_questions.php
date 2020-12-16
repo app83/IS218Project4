@@ -1,5 +1,6 @@
 <?php
 session_start();
+//require('session.php');
 include('abstract-views/header.php');
 ?>
 
