@@ -22,19 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e7b381d-0028-4a30-b853-de1a4460d1cc" name="Default Changelist" comment="edit function changes">
-      <change afterPath="$PROJECT_DIR$/model/account.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/answer.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/question.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/questiondisplay.php" afterDir="false" />
+    <list default="true" id="2e7b381d-0028-4a30-b853-de1a4460d1cc" name="Default Changelist" comment="view question function changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/accounts_db.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/accounts_db.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/answers_db.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/answers_db.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/questions_db.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/questions_db.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/session.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/display_questions.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/display_questions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/questiondisplay.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/questiondisplay.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +106,10 @@
       <workItem from="1607713891210" duration="12450000" />
       <workItem from="1607727524509" duration="130000" />
       <workItem from="1608052769936" duration="6097000" />
-      <workItem from="1608072846343" duration="7705000" />
+      <workItem from="1608072846343" duration="7740000" />
+      <workItem from="1608082024027" duration="71000" />
+      <workItem from="1608082241050" duration="158000" />
+      <workItem from="1608145939016" duration="86000" />
     </task>
     <task id="LOCAL-00001" summary="Files added">
       <created>1602022154344</created>
@@ -319,7 +314,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608079427914</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="view question function changes">
+      <created>1608081952856</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1608081952856</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,7 +356,8 @@
     <MESSAGE value="changing to classes" />
     <MESSAGE value="adding classes" />
     <MESSAGE value="edit function changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit function changes" />
+    <MESSAGE value="view question function changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="view question function changes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="234" y="0" key="#Deployment" timestamp="1608075850203">
@@ -397,10 +400,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="585" y="264" key="NewPhpFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1608080963627" />
-    <state x="234" y="73" key="Vcs.Push.Dialog.v2" timestamp="1608079429482">
+    <state x="234" y="73" key="Vcs.Push.Dialog.v2" timestamp="1608081954919">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="234" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1608079429482" />
+    <state x="234" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1608081954919" />
     <state x="498" y="239" key="WebDeployment.AddServerDialog.v.1" timestamp="1602001021572">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

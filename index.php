@@ -166,12 +166,13 @@ switch ($action) {
 
         break;
     }
-    case 'view_question': {
-        //takes to a page where there is a single question view
-        $userId = filter_input(INPUT_GET, 'userId');
+    case 'display_single_question': {
+        $userId = filter_input(INPUT_POST, 'userId');
+        $questionId = filter_input(INPUT_POST, 'questionId');
         if ($userId == NULL || $userId < 0) {
             header('Location: .?action=show_login');
         } else {
+            $question = QuestionDB::get_question($questionId);
             include('views/questiondisplay.php');
         }
         break;
