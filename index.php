@@ -1,7 +1,9 @@
 <?php
 session_start();
+$_SESSION['user'] = filter_input(INPUT_POST, 'userId');
 
 //require('session.php');
+
 require('model/database.php');
 require('model/accounts_db.php');
 require('model/questions_db.php');
@@ -172,7 +174,7 @@ switch ($action) {
             header('Location: .?action=show_login');
         } else {
             $question = QuestionDB::get_question($questionId);
-            include('views/questiondisplay.php');
+            include('views/single_question_view.php');
         }
         break;
     }

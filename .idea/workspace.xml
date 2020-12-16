@@ -25,7 +25,10 @@
     <list default="true" id="2e7b381d-0028-4a30-b853-de1a4460d1cc" name="Default Changelist" comment="view question function changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/questiondisplay.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/questiondisplay.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/session.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/display_questions.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/display_questions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/questiondisplay.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/single_question_view.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +111,7 @@
       <workItem from="1608072846343" duration="7740000" />
       <workItem from="1608082024027" duration="71000" />
       <workItem from="1608082241050" duration="158000" />
-      <workItem from="1608145939016" duration="2512000" />
+      <workItem from="1608145939016" duration="4340000" />
     </task>
     <task id="LOCAL-00001" summary="Files added">
       <created>1602022154344</created>
@@ -327,7 +330,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608146040553</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="view question function changes">
+      <created>1608160231176</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1608160231176</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,10 +416,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="585" y="264" key="NewPhpFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1608080963627" />
-    <state x="234" y="73" key="Vcs.Push.Dialog.v2" timestamp="1608146043734">
+    <state x="234" y="73" key="Vcs.Push.Dialog.v2" timestamp="1608160260185">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="234" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1608146043734" />
+    <state x="234" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1608160260185" />
     <state x="498" y="239" key="WebDeployment.AddServerDialog.v.1" timestamp="1602001021572">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
