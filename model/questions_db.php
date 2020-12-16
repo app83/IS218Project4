@@ -64,7 +64,11 @@ class Question
         $statement = $db->prepare($query);
         $statement->bindValue(':questionId', $questionId);
         $statement->execute();
+        $question = $statement->fetch();
         $statement->closeCursor();
+
+        return $question;
+
     }
 
     public static function edit_question($questionId, $title, $body, $skills)
