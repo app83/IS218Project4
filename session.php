@@ -1,5 +1,7 @@
 <?php
+
 session_start();
+
 $_SESSION['user'] = filter_input(INPUT_POST, 'userId');
 
 if(!isset($_SESSION['user'])) {

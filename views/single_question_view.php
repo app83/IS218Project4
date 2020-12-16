@@ -12,14 +12,12 @@ include('abstract-views/header.php');
         <th>Body</th>
         <th>Skills</th>
     </tr>
-    <?php foreach ($questions as $question) : ?>
-        <tr>
-            <td><?php echo $question['title']; ?></td>
-            <td><?php echo $question['body']; ?></td>
-            <td><?php echo $question['skills']; ?></td>
+    <tr>
+        <td><?php echo $question['title']; ?></td>
+        <td><?php echo $question['body']; ?></td>
+        <td><?php echo $question['skills']; ?></td>
+    </tr>
 
-        </tr>
-    <?php endforeach; ?>
 </table>
 
 <form action="index.php" method="post">
