@@ -19,7 +19,7 @@ switch ($action) {
     case 'show_login': {
         //displays login page on screen
         if($_SESSION['userId']){
-            header('Location: .?action=display_users');
+            header('Location: .?action=display_questions');
         }else {
             include('views/login.php');
         }
