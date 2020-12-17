@@ -86,7 +86,7 @@ class QuestionDB
         $statement->closeCursor();
     }
 
-    public static function newAnswer($title, $body, $skills, $ownerid)
+    /*public static function newAnswer($title, $body, $skills, $ownerid)
     { //change the function based on what will be in the answers table!!!!
         $db = Database::getDB();
         $query = 'INSERT INTO answers 
@@ -113,6 +113,6 @@ class QuestionDB
         $statement->closeCursor();
 
         return $answers;
-    }
+    }*/
 }
 ?>

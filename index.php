@@ -3,7 +3,6 @@
 require('model/database.php');
 require('model/accounts_db.php');
 require('model/questions_db.php');
-require('model/answers_db.php');
 
 session_start();
 
