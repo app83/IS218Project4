@@ -1,14 +1,11 @@
 <?php
-session_start();
-$_SESSION['user'] = filter_input(INPUT_POST, 'userId');
-
-//require('session.php');
 
 require('model/database.php');
 require('model/accounts_db.php');
 require('model/questions_db.php');
 require('model/answers_db.php');
 
+session_start();
 
 $action = filter_input(INPUT_POST, 'action');
 if ($action == NULL) {
@@ -21,7 +18,11 @@ if ($action == NULL) {
 switch ($action) {
     case 'show_login': {
         //displays login page on screen
-        include('views/login.php');
+        if($_SESSION['userId']){
+            header('Location: .?action=display_users');
+        }else {
+            include('views/login.php');
+        }
         break;
     }
 
@@ -39,7 +40,8 @@ switch ($action) {
             if ($userId == false) {
                 header("Location: .?action=display_registration");
             } else {
-                header("Location: .?action=display_questions&userId=$userId");
+                $_SESSION['userId'] = $userId;
+                header("Location: .?action=display_questions");
             }
         }
         break;
@@ -72,7 +74,7 @@ switch ($action) {
 
     case 'display_questions': {
         //displays questions on screen for the user
-        $userId = filter_input(INPUT_GET, 'userId');
+        $userId = $_SESSION['userId']; //filter_input(INPUT_GET, 'userId');
         $listType = filter_input(INPUT_GET, 'listType');
         if ($userId == NULL || $userId < 0) {
             header('Location: .?action=show_login');
@@ -86,7 +88,7 @@ switch ($action) {
 
     case 'display_question_form': {
         //displays question form on screen
-        $userId = filter_input(INPUT_GET, 'userId');
+        $userId = $_SESSION['userId']; //filter_input(INPUT_GET, 'userId');
         if ($userId == NULL || $userId < 0) {
             header('Location: .?action=show_login');
         } else {
@@ -97,7 +99,7 @@ switch ($action) {
 
    case 'display_users': {
         //gets the user that is logged in
-        $userId = filter_input(INPUT_GET, 'userId');
+        $userId = $_SESSION['userId']; //filter_input(INPUT_GET, 'userId');
         if ($userId == NULL) {
             $error = 'User Id unavailable';
             include('errors/error.php');
@@ -109,7 +111,7 @@ switch ($action) {
     }
     case 'display_edit_question': {
         //display the edit question form
-        $userId = filter_input(INPUT_POST, 'userId');
+        $userId = $_SESSION['userId']; //filter_input(INPUT_POST, 'userId');
         $questionId = filter_input(INPUT_POST, 'questionId');
         if ($userId == NULL || $userId < 0) {
             header('Location: .?action=show_login');
@@ -122,7 +124,7 @@ switch ($action) {
     case 'edit_question': {
         //able to edit a question right from the website
         $questionId = filter_input(INPUT_POST, 'questionId');
-        $userId = filter_input(INPUT_POST, 'userId');
+        $userId = $_SESSION['userId']; //filter_input(INPUT_POST, 'userId');
         $title = filter_input(INPUT_POST, 'title');
         $body = filter_input(INPUT_POST, 'body');
         $skills = filter_input(INPUT_POST, 'skills');
@@ -132,7 +134,7 @@ switch ($action) {
             include('errors/error.php');
         } else {
            QuestionDB::edit_question($questionId, $title, $body, $skills);
-           header("Location: .?action=display_questions&userId=$userId");
+           header("Location: .?action=display_questions");
         }
         break;
     }
@@ -140,19 +142,19 @@ switch ($action) {
     case 'delete_question': {
         //able to delete a question from the website
         $questionId = filter_input(INPUT_POST, 'questionId');
-        $userId = filter_input(INPUT_POST, 'userId');
+        $userId = $_SESSION['userId']; //filter_input(INPUT_POST, 'userId');
         if ($questionId == NULL || $userId == NULL){
             $error = "All fields are required";
             include('errors/error.php');
         } else {
             QuestionDB::delete_question($questionId);
-            header("Location: .?action=display_questions&userId=$userId");
+            header("Location: .?action=display_questions");
         }
     }
 
     case 'submit_question': {
         //submitting a question form
-        $userId = filter_input(INPUT_POST, 'userId');
+        $userId = $_SESSION['userId']; //filter_input(INPUT_POST, 'userId');
         $title = filter_input(INPUT_POST, 'title');
         $body = filter_input(INPUT_POST, 'body');
         $skills = filter_input(INPUT_POST, 'skills');
@@ -162,13 +164,13 @@ switch ($action) {
             include('errors/error.php');
         } else {
             QuestionDB::create_question($title, $body, $skills, $userId);
-            header("Location: .?action=display_questions&userId=$userId");
+            header("Location: .?action=display_questions");
         }
 
         break;
     }
     case 'display_single_question': {
-        $userId = filter_input(INPUT_GET, 'userId');
+        $userId = $_SESSION['userId']; //filter_input(INPUT_GET, 'userId');
         $questionId = filter_input(INPUT_GET, 'questionId');
         if ($userId == NULL || $userId < 0) {
             header('Location: .?action=show_login');
@@ -179,7 +181,17 @@ switch ($action) {
         break;
     }
     case 'logout': {
-        include('views/logout.php');
+        session_destroy();
+        $_SESSION = array();
+
+        $name = session_name();
+        $expire = strtotime('-1 year');
+
+        $params = session_get_cookie_params();
+
+        setcookie($name, '', $expire, $params['path'], $params['domain'], $params['secure'], $params['httponly']);
+
+        header('Location: .');
         break;
     }
     default: {

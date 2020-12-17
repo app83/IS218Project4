@@ -57,9 +57,7 @@ include('abstract-views/header.php');
             </tr>
         <?php endforeach; ?>
     </table>
-    <form action="index.php" method="post">
-        <input type="hidden" name="action" value="logout">
-        <button class="btn btn-success" value="Logout">Logout</button>
+<br>
+    <a class="btn btn-success" href=".?action=logout">Logout</a>
 
-    </form>
 <?php include('abstract-views/footer.php'); ?>
