@@ -171,7 +171,7 @@ switch ($action) {
     }
     case 'display_single_question': {
         $userId = $_SESSION['userId']; //filter_input(INPUT_GET, 'userId');
-        $questionId = filter_input(INPUT_GET, 'questionId');
+        $questionId = filter_input(INPUT_POST, 'questionId');
         if ($userId == NULL || $userId < 0) {
             header('Location: .?action=show_login');
         } else {
@@ -189,7 +189,8 @@ switch ($action) {
 
         $params = session_get_cookie_params();
 
-        setcookie($name, '', $expire, $params['path'], $params['domain'], $params['secure'], $params['httponly']);
+        setcookie($name, '', $expire, $params['path'], $params['domain'],
+            $params['secure'], $params['httponly']);
 
         header('Location: .');
         break;
