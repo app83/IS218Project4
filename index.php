@@ -174,6 +174,7 @@ switch ($action) {
         if ($userId == NULL || $userId < 0) {
             header('Location: .?action=show_login');
         } else {
+            $user = AccountDB::get_user($userId);
             $question = QuestionDB::get_question($questionId);
             include('views/single_question_view.php');
         }
