@@ -22,12 +22,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2e7b381d-0028-4a30-b853-de1a4460d1cc" name="Default Changelist" comment="session edits">
+    <list default="true" id="2e7b381d-0028-4a30-b853-de1a4460d1cc" name="Default Changelist" comment="display question edits">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/session.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/display_questions.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/display_questions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/logout.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/account.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/account.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/accounts_db.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/accounts_db.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/question.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/question.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/questions_db.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/questions_db.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +111,8 @@
       <workItem from="1608072846343" duration="7740000" />
       <workItem from="1608082024027" duration="71000" />
       <workItem from="1608082241050" duration="158000" />
-      <workItem from="1608145939016" duration="6601000" />
+      <workItem from="1608145939016" duration="10524000" />
+      <workItem from="1608317832113" duration="2646000" />
     </task>
     <task id="LOCAL-00001" summary="Files added">
       <created>1602022154344</created>
@@ -350,7 +352,56 @@
       <option name="project" value="LOCAL" />
       <updated>1608162261480</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="session edits">
+      <created>1608164433438</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1608164433438</updated>
+    </task>
+    <task id="LOCAL-00036" summary="session edits">
+      <created>1608164485628</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1608164485628</updated>
+    </task>
+    <task id="LOCAL-00037" summary="session edits">
+      <created>1608165497670</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1608165497670</updated>
+    </task>
+    <task id="LOCAL-00038" summary="session edits">
+      <created>1608165760413</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1608165760413</updated>
+    </task>
+    <task id="LOCAL-00039" summary="session edits">
+      <created>1608166527507</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1608166527507</updated>
+    </task>
+    <task id="LOCAL-00040" summary="session edits">
+      <created>1608166638025</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1608166638025</updated>
+    </task>
+    <task id="LOCAL-00041" summary="display question edits">
+      <created>1608167188373</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1608167188373</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -388,7 +439,8 @@
     <MESSAGE value="view question function changes" />
     <MESSAGE value="single view question edits" />
     <MESSAGE value="session edits" />
-    <option name="LAST_COMMIT_MESSAGE" value="session edits" />
+    <MESSAGE value="display question edits" />
+    <option name="LAST_COMMIT_MESSAGE" value="display question edits" />
   </component>
   <component name="WindowStateProjectService">
     <state x="234" y="0" key="#Deployment" timestamp="1608075850203">
@@ -407,10 +459,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="218" y="0" key="#SSH_Configurations/0.0.1280.680@0.0.1280.680" timestamp="1602001125625" />
-    <state x="626" y="93" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608163842743">
+    <state x="626" y="93" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1608166024446">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="626" y="93" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1608163842743" />
+    <state x="626" y="93" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1608166024446" />
     <state x="530" y="95" key="FileChooserDialogImpl" timestamp="1608075874828">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -435,10 +487,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="585" y="264" key="NewPhpFileDialog/0.0.1280.680@0.0.1280.680" timestamp="1608080963627" />
-    <state x="234" y="73" key="Vcs.Push.Dialog.v2" timestamp="1608162271292">
+    <state x="234" y="73" key="Vcs.Push.Dialog.v2" timestamp="1608167190977">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="234" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1608162271292" />
+    <state x="234" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1608167190977" />
     <state x="498" y="239" key="WebDeployment.AddServerDialog.v.1" timestamp="1602001021572">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

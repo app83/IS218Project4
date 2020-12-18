@@ -1,5 +1,5 @@
 <?php
-class QuestionDB
+class QuestionsDB
 {
 
     public static function get_all_questions()

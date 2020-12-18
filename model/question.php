@@ -9,32 +9,32 @@ class Question {
         $this->skills = $skills;
     }
 
-    public function getquestionId() {
+    public function getQuestionId() {
         return $this->questionId;
     }
-    public function setquestionId($value) {
-        $this->questionId = $value;
+    public function setQuestionId($questionId) {
+        $this->questionId = $questionId;
     }
 
-    public function gettitle() {
+    public function getTitle() {
         return $this->title;
     }
-    public function settitle($value) {
-        $this->title = $value;
+    public function setTitle($title) {
+        $this->title = $title;
     }
 
-    public function getbody() {
+    public function getBody() {
         return $this->body;
     }
-    public function setbody($value) {
-        $this->body = $value;
+    public function setBody($body) {
+        $this->body = $body;
     }
 
-    public function getskills() {
+    public function getSkills() {
         return $this->skills;
     }
-    public function setskills($value) {
-        $this->skills = $value;
+    public function setSkills($skills) {
+        $this->skills = $skills;
     }
 
 }

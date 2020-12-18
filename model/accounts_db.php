@@ -1,5 +1,5 @@
 <?php
-class AccountDB {
+class AccountsDB {
     public static function validate_login($email, $password)
     {
         $db = Database::getDB();
@@ -17,10 +17,13 @@ class AccountDB {
             $statement->closeCursor();
             return false;
         } else {
-            $userId = $user['id'];
+            $user = new Account($user['id'], $user['fname'], $user['lname'], $user['birthday'], $user['email'], $user['password']);
+            //$userId = $user['id'];
             $statement->closeCursor();
-            return $userId;
+            //return $userId;
+            return $user;
         }
+
     }
 
     public static function get_user($userId)

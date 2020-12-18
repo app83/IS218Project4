@@ -11,45 +11,45 @@ class Account {
         $this->password = $password;
 
     }
-    public function getID() {
+    public function getId() {
         return $this->id;
     }
-    public function setID($value) {
-        $this->id = $value;
+    public function setId($id) {
+        $this->id = $id;
     }
 
-    public function getfname() {
+    public function getFname() {
         return $this->fname;
     }
-    public function setfname($value) {
-        $this->fname = $value;
+    public function setFname($fname) {
+        $this->fname = $fname;
     }
 
-    public function getlname() {
+    public function getLname() {
         return $this->lname;
     }
-    public function setlname($value) {
-        $this->lname = $value;
+    public function setLname($lname) {
+        $this->lname = $lname;
     }
 
-    public function getbirthday() {
+    public function getBirthday() {
         return $this->birthday;
     }
-    public function setbirthday($value) {
-        $this->birthday = $value;
+    public function setBirthday($birthday) {
+        $this->birthday = $birthday;
     }
 
-    public function getemail() {
+    public function getEmail() {
         return $this->email;
     }
-    public function setemail($value) {
-        $this->email = $value;
+    public function setEmail($email) {
+        $this->email = $email;
     }
 
-    public function getpassword() {
+    public function getPassword() {
         return $this->password;
     }
-    public function setpassword($value) {
-        $this->password = $value;
+    public function setPassword($password) {
+        $this->password = $password;
     }
 }
